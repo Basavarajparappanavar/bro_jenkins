@@ -3,8 +3,9 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="testcase.url2_Test"/>
-      <class name="testcase.url1_Test"/>
+     <class name="testcase.register_DWS"/>
+      <class name="testcase.Login_DWS"/>
+      <class name="testcase.search_Test"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
