@@ -16,6 +16,7 @@ import org.openqa.selenium.WebDriver;
 			System.setProperty("webdriver.chrome.driver","./drivers/chromedriver.exe");
 			WebDriver driver=new ChromeDriver();
 			driver.get("https://demowebshop.tricentis.com/");
+			driver.manage().window().maximize();
 			driver.findElement(By.linkText("Register")).click();
 			driver.findElement(By.id("gender-male")).click();
 			driver.findElement(By.id("FirstName")).sendKeys("CHETHAN");

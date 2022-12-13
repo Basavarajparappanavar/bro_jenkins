@@ -13,6 +13,7 @@ public class Login_DWS {
 		System.setProperty("webdriver.chrome.driver","./drivers/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://demowebshop.tricentis.com/");
+		driver.manage().window().maximize();
 		driver.findElement(By.xpath("//a[contains(text(),\"Log\")]")).click();
 		driver.findElement(By.xpath("((//input[contains(@name,'Email')])[2])/../input")).sendKeys("chethu123@gmail.com");
 		driver.findElement(By.id("Password")).sendKeys("9902350966");
